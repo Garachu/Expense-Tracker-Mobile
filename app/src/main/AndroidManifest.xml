@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!-- describe the fundamental characteristics of the app and define each of its components -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.expensetracker.expense_tracker_mobile">
+
+    <!-- Tag for our Application -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- MainActivity Component -->
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- This is how the MaintActivity is registered with the launcher -->
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- DisplayMessageActivity -->
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".ExpenseViewActivity"></activity>
+    </application>
+
+</manifest>
